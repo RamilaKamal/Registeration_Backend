@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <title>Sign up form</title>
+
+    <style>
+        body {
+            background-color: darksalmon;
+        }
+
+        .form-signup {
+            max-width: 450px;
+            padding: 15px;
+            margin-top: 5%;
+            margin-left: 35%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="form-signup bg-white p-4 mb-4">
+        <!-- <form> -->
+            <h1 class="h3 mb-3 fw-normal text-center">Sign Up</h1>
+            <hr>
+            <div class="p-1">
+                <label for="firstname" class="col-form-label">First Name</label>
+                <input type="text" name="fname" class="bg-light form-control" id="firstname"
+                    placeholder="Enter First Name" required>
+            </div>
+            <div class="p-1">
+                <label for="firstname" class="col-form-label">Last Name</label>
+                <input type="text" name="lname" class="bg-light form-control" id="lastname"
+                    placeholder="Enter Last Name">
+            </div>
+            <div class="p-1">
+                <label for="e-address" class="col-form-label">Email Address</label>
+                <input type="email" name="email" class="bg-light form-control" id="e_address"
+                    placeholder="Enter Email Address" required>
+            </div>
+            <div class="p-1">
+                <label for="gender" class="col-form-label">Gender</label>
+                <select class="form-select bg-light" id="gender">
+                    <option selected>Select--</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                </select>
+            </div>
+            <div class="p-1">
+                <label for="firstname" class="col-form-label">Password</label>
+                <input type="password" name="password" class="bg-light form-control mb-3" id="password"
+                    placeholder="Enter Password" required>
+            </div>
+            <button class="w-100 btn btn-lg btn-primary mt-3 mb-2" id="btn">Submit</button>
+            <div class="pt-2">
+                <p>Already have an account? <span><a href="/">log In</a></span></p>
+            </div>
+        <!-- </form> -->
+    </div>
+
+    <script src="register.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"
+        integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    
+</body>
+
+</html>
